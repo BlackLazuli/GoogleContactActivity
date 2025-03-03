@@ -1,4 +1,4 @@
-package com.dotarot.googlecontacts.config;
+package com.dotarot.googlecontactintegration.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,16 +9,18 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity
-
 public class SecurityConfig {
+
     @Bean
     public SecurityFilterChain defaultSecurityChain(HttpSecurity http) throws Exception {
         return http
                 .authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
                 .oauth2Login(oauth -> oauth.defaultSuccessUrl("/user-info", true))
                 .logout(logout -> logout.logoutSuccessUrl("/"))
-                .formLogin(form -> form.defaultSuccessUrl("/secured", true))
+                .formLogin(form -> form.defaultSuccessUrl("/", true))
                 .csrf(AbstractHttpConfigurer::disable)
                 .build();
+
     }
+
 }
