@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GooglecontactintegrationApplication<googlecontactintegration>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.dotarot.googlecontactintegration.GooglecontactintegrationApplication",
+            "projectName": "googlecontactintegration",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
