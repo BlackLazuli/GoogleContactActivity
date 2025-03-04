@@ -7,41 +7,65 @@
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
           <style>
             body {
-                background-color: #fdf5c9;
-                font-family: 'Courier New', Courier, monospace;
+                background-color: #f5f5f5; /* Light gray, newspaper feel */
+                font-family: 'Georgia', serif;
+                color: #333;
+                line-height: 1.6;
             }
             .container {
                 margin-top: 40px;
                 max-width: 800px;
                 background: #fff;
                 padding: 20px;
-                border-radius: 10px;
-                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-                border: 2px solid #d4a017;
+                border-radius: 0;
+                box-shadow: none;
+                border: 1px solid #ccc; /* Subtle newspaper border */
             }
             .header-title {
                 text-align: center;
-                color: #6a4f27;
+                color: #000;
                 font-weight: bold;
+                font-size: 32px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                border-bottom: 3px solid #000;
+                padding-bottom: 10px;
                 margin-bottom: 20px;
-                font-size: 28px;
             }
             .contact-card {
-                background: #fff3cd;
+                background: #f9f9f9;
                 padding: 15px;
-                margin-bottom: 10px;
-                border-left: 5px solid #d4a017;
-                border-radius: 5px;
-                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+                margin-bottom: 15px;
+                border-left: none;
+                border-bottom: 2px solid #ccc;
+                border-radius: 0;
+                box-shadow: none;
             }
             .contact-info {
-                font-size: 16px;
-                color: #333;
+                font-size: 18px;
+                color: #222;
+            }
+            .action-buttons {
+                display: flex;  /* Arrange buttons in a row */
+                justify-content: flex-start; /* Align buttons to the left */
+                gap: 10px; /* Space between buttons */
             }
             .action-buttons button {
-                margin-right: 5px;
+                padding: 6px 12px; /* Smaller padding */
+                font-size: 14px; /* Smaller text */
+                background: #000;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: bold;
+                min-width: 100px; /* Ensures consistent size */
+            }
+            .action-buttons button:hover {
+                background: #444;
             }
         </style>
+        
 </head>
 <body>
 
